@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.yyz.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ItemMixin",
+    "PlayerEntityMixin"
+  ],
+  "client": [
+    "DrawContextMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

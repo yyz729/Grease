@@ -1,0 +1,11 @@
+{
+  "item.grease.lightning_grease": "雷油脂",
+  "item.grease.sacred_grease": "圣油脂",
+  "item.grease.fire_grease": "火油脂",
+  "item.grease.magic_grease": "魔力油脂",
+  "item.grease.poison_grease": "毒油脂",
+  "item.grease.freezing_grease": "结冰油脂",
+
+  "grease.fail.message": "该物品无法使用油脂",
+  "itemGroup.grease.title": "油脂"
+}
