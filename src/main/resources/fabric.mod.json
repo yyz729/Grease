@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "grease",
+  "version": "${version}",
+  "name": "Grease-1.21.1",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/grease/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.yyz.client.GreaseClient"
+    ],
+    "main": [
+      "com.yyz.Grease"
+    ]
+  },
+  "mixins": [
+    "grease.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
