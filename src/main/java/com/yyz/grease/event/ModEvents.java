@@ -1,26 +1,16 @@
-package com.yyz.event;
+package com.yyz.grease.event;
 
-import com.yyz.Grease;
-import com.yyz.item.GreaseItem;
+import com.yyz.grease.Grease;
 import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
-import net.fabricmc.fabric.api.event.player.UseItemCallback;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LightningEntity;
-import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.*;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolItem;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
-import net.minecraft.util.Hand;
-import net.minecraft.util.TypedActionResult;
 
 public class ModEvents {
     public static void registerClient(){
@@ -35,6 +25,7 @@ public class ModEvents {
 
     public static void registerServer(){
         AttackEntityCallback.EVENT.register((playerEntity, world, hand, entity, entityHitResult) -> {
+
             if (!world.isClient) {
 
                 ItemStack stack = playerEntity.getMainHandStack();
@@ -47,6 +38,7 @@ public class ModEvents {
                                 LightningEntity lightning = new LightningEntity(EntityType.LIGHTNING_BOLT, world);
                                 lightning.setPosition(entity.getPos());
                                 world.spawnEntity(lightning);
+
                             }
                             return ActionResult.PASS;
                         }

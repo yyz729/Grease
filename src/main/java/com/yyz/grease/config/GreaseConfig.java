@@ -1,7 +1,8 @@
-package com.yyz.config;
+package com.yyz.grease.config;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import net.minecraft.item.Items;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -11,13 +12,18 @@ public class GreaseConfig {
 
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
-    public final int fire_tick = 160;
-    public final int poison_tick = 400;
-    public final int freezing_tick = 160;
-    public final int lightning_cooldown = 100;
-    public final int grease_tick = 600;
-    public final int sacred_damage = 2;
-    public final int magic_change = 100;
+    public int fire_tick = 160;
+    public int poison_tick = 400;
+    public int freezing_tick = 160;
+    public int lightning_cooldown = 100;
+    public int grease_tick = 600;
+    public int sacred_damage = 2;
+    public int magic_change = 100;
+
+
+    public Set<String> grease_item = Set.of(
+            "minecraft:stick"
+    );
 
     public static GreaseConfig loadConfig(File file) {
         GreaseConfig config;

@@ -1,14 +1,17 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.yyz.mixin",
+  "package": "com.yyz.grease.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "ItemMixin",
     "PlayerEntityMixin"
   ],
   "client": [
-    "DrawContextMixin"
+    "BufferBuilderStorageMixin",
+    "DrawContextMixin",
+    "HeldItemRendererMixin",
+    "ItemRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1
