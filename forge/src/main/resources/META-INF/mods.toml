@@ -1,0 +1,30 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "grease"
+version = "${version}"
+displayName = "Grease"
+authors = "yyz729"
+description = '''
+https://www.curseforge.com/minecraft/mc-mods/weapon-grease
+https://modrinth.com/mod/weapon-grease
+https://github.com/yyz729/Grease
+'''
+#logoFile = ""
+
+[[dependencies.grease]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.grease]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"

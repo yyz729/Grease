@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "grease",
+  "version": "${version}",
+  "name": "Grease",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "yyz729"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/examplemod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.yyz.grease.fabric.GreaseFabric"
+    ]
+  },
+  "mixins": [
+    "grease.mixins.json",
+    "grease-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.20.1"
+  }
+}

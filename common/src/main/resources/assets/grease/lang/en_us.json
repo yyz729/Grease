@@ -1,0 +1,11 @@
+{
+  "item.grease.lightning_grease": "lightning grease",
+  "item.grease.sacred_grease": "sacred grease",
+  "item.grease.fire_grease": "fire grease",
+  "item.grease.magic_grease": "magic grease",
+  "item.grease.poison_grease": "poison grease",
+  "item.grease.freezing_grease": "freezing grease",
+
+  "grease.fail.message": "This item cannot use grease",
+  "itemGroup.grease.title": "Grease"
+}
